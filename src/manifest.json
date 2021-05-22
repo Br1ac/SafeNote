@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "SafeNote",
+  "short_name": "SafeNote",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

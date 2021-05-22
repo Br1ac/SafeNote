@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      SafeNote - Register
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-input style="width:100% !important;" type="text" [(ngModel)]="f_name" name="f_name" placeholder="First Name"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-input style="width:100% !important;" type="text" [(ngModel)]="l_name" name="l_name" placeholder="Last Name"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-input style="width:100% !important;" type="text" [(ngModel)]="mail" name="mail" placeholder="Mail"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-input style="width:100% !important;" type="text" [(ngModel)]="login" name="login" placeholder="Login" ></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-input style="width:100% !important;" type="password" [(ngModel)]="pass" name="pass" placeholder="Password" ></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="register()" style="width:100% !important;">Register</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

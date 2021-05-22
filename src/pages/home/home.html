@@ -1,14 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      SafeNote - Home
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="profil()" style="width:100% !important;">Profil</button>
+      </ion-col>
+        <ion-col>
+          <button ion-button (click)="logout()" style="width:100% !important;">Logout</button>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="note()" style="width:100% !important;">Add New Note</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-item *ngFor="let note of notes">
+     <ion-label>{{note}}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

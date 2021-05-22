@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      SafeNote - Note
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="home()" style="width:100% !important;">Home</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="profil()" style="width:100% !important;">Profil</button>
+      </ion-col>
+        <ion-col>
+          <button ion-button (click)="logout()" style="width:100% !important;">Logout</button>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="add_note()" style="width:100% !important;">Save Note</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-textarea style="width:100% !important;" type="text" [(ngModel)]="note" name="note" placeholder="Write your note here..."></ion-textarea>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      SafeNote - Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-input style="width:100% !important;" type="text" [(ngModel)]="v_login" name="login" placeholder="Login"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-input style="width:100% !important;" type="password" [(ngModel)]="pass" name="pass" placeholder="Password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="login()" style="width:100% !important;">Login</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="register()" style="width:100% !important;">Register</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
